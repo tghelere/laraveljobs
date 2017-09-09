@@ -14,7 +14,7 @@ class AddExpiresAtOnJobsTable extends Migration
     public function up()
     {
         Schema::table('jobs', function (Blueprint $table) {
-            $table->date('expires_at')->nullable()->after('description');
+            $table->date('expires_at')->nullable();
         });
     }
 
